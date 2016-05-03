@@ -1,0 +1,59 @@
+/*.clear img{height: 177px;width: 284px;}*/
+
+/*.image{
+    color: blue;
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+.notice{
+    position:relative;
+    width: 284px;
+    height: 177px;
+    overflow:hidden;
+    border:1px solid #eee;
+    
+   
+}
+.image{
+    position:absolute;  /*--固定定位--*/
+    width:1140px;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+}
+.image img {
+    display:block;
+    height:177px;
+    width:284px;
+    float:left;
+    border:none;
+}
+.icoBox{
+    position:relative;  /*--固定定位--*/
+    bottom:-160px;
+    right:-190px;
+    width:76px;
+    height:12px;
+    text-align:center;
+    line-height:40px;
+    z-index:2;
+    }
+.icoBox span{
+    display:block;
+    float:left;
+    height:12px;
+    width:12px;
+    margin-left:3px;
+    overflow:hidden;
+    background:url("../image/ico.png") 0px 0px no-repeat;
+    cursor:pointer;
+    }
+.icoBox span.active {
+    background-position:0px -12px;
+    cursor:default;
+    }
